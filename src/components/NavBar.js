@@ -12,7 +12,7 @@ const NavBar = () => {
 					</button>
 				</div>
 				<div className="header-titulo">
-					<a href="./index.html"><span className="titulo">Cube</span></a>
+					<span className="titulo">Cube</span>
 				</div>
 				<div className="header-button header-cart">
 					<button className="cart">
@@ -23,17 +23,17 @@ const NavBar = () => {
 				<div className="header-search search"><form className="search-form" action="#" method="get"><input type="search" name="" id="" placeholder="Search products..."/></form></div>
 				<div className="header-list list">
 					<ul>
-						<li><a href="./sesion.html"><span>Iniciar Sesion</span></a></li>
-						<li><a href=""><span>Contacto</span></a></li>
-						<li><a href="./catalogo.html"><span>Catalogo</span></a></li>
+						<li><span>Iniciar Sesion</span></li>
+						<li><span>Contacto</span></li>
+						<li><span>Catalogo</span></li>
 					</ul>
 				</div>
 			</div>
 			<nav className="second-header list">
 				<ul>
-					<li><a href="./sesion.html"><span>Iniciar Sesion</span></a></li>
-					<li><a href=""><span>Contacto</span></a></li>
-					<li><a href="./catalogo.html"><span>Catalogo</span></a></li>
+					<li><span>Iniciar Sesion</span></li>
+					<li><span>Contacto</span></li>
+					<li><span>Catalogo</span></li>
 				</ul>
 			</nav>
 			<div className="toggle-header">
@@ -42,9 +42,9 @@ const NavBar = () => {
 				</div>
 				<div className="toggle-header-list list">
 					<ul>
-						<li><a href="./sesion.html"><span>Iniciar Sesion</span></a></li>
-						<li><a href=""><span>Carrito</span></a></li>
-						<li><a href="./catalogo.html"><span>Catalogo</span></a></li>
+						<li><span>Iniciar Sesion</span></li>
+						<li><span>Carrito</span></li>
+						<li><span>Catalogo</span></li>
 					</ul>
 				</div>
 			</div>

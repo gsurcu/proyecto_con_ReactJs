@@ -35,7 +35,6 @@ button,input {
 }
 
 input[type=text],input[type=email], input[type=password], input[type=search] {
-  padding: .5180469716em;
   outline: 0;
   color: #222;
   width: 100%;
