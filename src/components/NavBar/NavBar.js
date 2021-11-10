@@ -1,7 +1,8 @@
+import { CartWidget } from '../CartWidget/CartWidget'
 import './NavBar.scss'
 
 
-const NavBar = () => {
+export const NavBar = () => {
 	return (
 		<header className="header">
 			<div className="primary-header">
@@ -16,8 +17,8 @@ const NavBar = () => {
 				</div>
 				<div className="header-button header-cart">
 					<button className="cart">
-						<i className="fas fa-shopping-cart fa-lg"></i>
-						<span></span>
+						{/* <i className="fas fa-shopping-cart fa-lg"></i> */}
+						<CartWidget />
 					</button>
 				</div>
 				<div className="header-search search"><form className="search-form" action="#" method="get"><input type="search" name="" id="" placeholder="Search products..."/></form></div>
@@ -59,4 +60,3 @@ const NavBar = () => {
 	)
 }
 
-export default NavBar;
