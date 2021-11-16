@@ -1,0 +1,15 @@
+.item-count {
+  display: flex;
+  padding: .5rem 1rem;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 200px;
+  .btn {
+    padding: .5rem;
+    width: 1.5rem;
+  }
+  .count {
+    flex: 1 1;
+    text-align: center;
+  }
+}
