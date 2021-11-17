@@ -8,7 +8,7 @@ function App() {
     <>
       <NavBar />
 
-      <ItemListContainer greeting="Proyecto con ReactJS!" />
+      <ItemListContainer />
     </>
   );
 }
