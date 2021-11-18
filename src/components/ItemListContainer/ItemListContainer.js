@@ -39,7 +39,9 @@ export const ItemListContainer = () => {
 			{/* <ItemList /> */}
 
 			{
-				loading ? <h2>Cargando...</h2> : <h2>Productos Listos</h2>
+				loading 
+				? <h2>Cargando...</h2> 
+				: <h2>Productos Listos</h2>
 			}
 		</div>
 	)
