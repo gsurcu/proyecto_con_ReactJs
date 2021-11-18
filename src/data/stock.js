@@ -1,100 +1,100 @@
 export const stock = [
 	{
-    nombre:"Qiyi Mofangge Warrior 3x3x3 Speedcube",
-    precio:4.98,
-    imagen:"./img/qiyi/warrior-3x3x3-speedcube-stickerless.jpg",
     id:1,
+    name:"Qiyi Mofangge Warrior 3x3x3 Speedcube",
+    price:4.98,
+    img:"https://gsurcu.github.io/proyecto_coder_JS/img/qiyi/warrior-3x3x3-speedcube-stickerless.jpg",
     marca:"qiyi"
   },
 	{
-    nombre:"Gan 356 R 3x3×3 Stickerless",
-    precio:23.32,
-    imagen:"./img/gancube/356-r-3x3x3-stickerless.jpg",
     id:2,
+    name:"Gan 356 R 3x3×3 Stickerless",
+    price:23.32,
+    img:"https://gsurcu.github.io/proyecto_coder_JS/img/gancube/356-r-3x3x3-stickerless.jpg",
     marca:"gan"
   },
 	{
-    nombre:"MoYu MFJS Axis Stickerless",
-    precio:3.32,
-    imagen:"./img/moyu/mfjs-axis-stickerless.jpg",
     id:3,
+    name:"MoYu MFJS Axis Stickerless",
+    price:3.32,
+    img:"https://gsurcu.github.io/proyecto_coder_JS/img/moyu/mfjs-axis-stickerless.jpg",
     marca:"moyu"
   },
 	{
-    nombre:"MoYu MeiLong 3×3x3 Stickerless",
-    precio:3.32,
-    imagen:"./img/moyu/meilong-3x3x3-stickerless.jpg",
     id:4,
+    name:"MoYu MeiLong 3×3x3 Stickerless",
+    price:3.32,
+    img:"https://gsurcu.github.io/proyecto_coder_JS/img/moyu/meilong-3x3x3-stickerless.jpg",
     marca:"moyu"
   },
 	{
-    nombre:"Ghost Cube with Black Labels",
-    precio:36.00,
-    imagen:"./img/mefferts/ghost-cube-black-label.jpg",
-    id:19,
+    id:5,
+    name:"Ghost Cube with Black Labels",
+    price:36.00,
+    img:"https://gsurcu.github.io/proyecto_coder_JS/img/mefferts/ghost-cube-black-label.jpg",
     marca:"mefferts"
   },
 	{
-    nombre:"Ghost Cube with White Labels",
-    precio:36.00,
-    imagen:"./img/mefferts/ghost-cube-white-label.jpg",
-    id:18,
+    id:6,
+    name:"Ghost Cube with White Labels",
+    price:36.00,
+    img:"https://gsurcu.github.io/proyecto_coder_JS/img/mefferts/ghost-cube-white-label.jpg",
     marca:"mefferts"
   },
 	{
-    nombre:"Hollow Cube 3x3x3 Clear",
-    precio:25.63,
-    imagen:"./img/mefferts/hollow-cube-clear-3x3x3.jpg",
-    id:17,
+    id:7,
+    name:"Hollow Cube 3x3x3 Clear",
+    price:25.63,
+    img:"https://gsurcu.github.io/proyecto_coder_JS/img/mefferts/hollow-cube-clear-3x3x3.jpg",
     marca:"mefferts"
   },
 	{
-    nombre:"Hollow Pyraminx Clear",
-    precio:25.15,
-    imagen:"./img/mefferts/hollow-pyraminx-clear.jpg",
-    id:16,
+    id:8,
+    name:"Hollow Pyraminx Clear",
+    price:25.15,
+    img:"https://gsurcu.github.io/proyecto_coder_JS/img/mefferts/hollow-pyraminx-clear.jpg",
     marca:"mefferts"
   },
 	{
-    nombre:"Hollow Skewb Cube Clear",
-    precio:32.26,
-    imagen:"./img/mefferts/hollow-skewb-cube-clear.jpg",
-    id:15,
+    id:9,
+    name:"Hollow Skewb Cube Clear",
+    price:32.26,
+    img:"https://gsurcu.github.io/proyecto_coder_JS/img/mefferts/hollow-skewb-cube-clear.jpg",
     marca:"mefferts"
   },
 	{
-    nombre:"Hollow Skewb Ultimate Clear",
-    precio:32.36,
-    imagen:"./img/mefferts/hollow-skewb-ultimate-clear.jpg",
-    id:14,
-    marca:"mefferts"
-  },
-	{
-    nombre:"MFJS MeiLong 5x5x5",
-    precio:4.98,
-    imagen:"./img/moyu/mfjs-meilong-5x5x5.jpg",
-    id:13,
-    marca:"moyu"
-  },
-	{
-    nombre:"Qiyi Axis Black",
-    precio:3.32,
-    imagen:"./img/qiyi/axis-3x3x3.jpg",
-    id:12,
-    marca:"qiyi"
-  },
-	{
-    nombre:"Qiyi QiHeng S Megaminx",
-    precio:6.65,
-    imagen:"./img/qiyi/qiheng-s-megamix.jpg",
-    id:11,
-    marca:"qiyi"
-  },
-	{
-    nombre:"GAN MG Skewb Cube",
-    precio:11.65,
-    imagen:"./img/gancube/mg-skewb.jpg",
     id:10,
+    name:"Hollow Skewb Ultimate Clear",
+    price:32.36,
+    img:"https://gsurcu.github.io/proyecto_coder_JS/img/mefferts/hollow-skewb-ultimate-clear.jpg",
+    marca:"mefferts"
+  },
+	{
+    id:11,
+    name:"MFJS MeiLong 5x5x5",
+    price:4.98,
+    img:"https://gsurcu.github.io/proyecto_coder_JS/img/moyu/mfjs-meilong-5x5x5.jpg",
+    marca:"moyu"
+  },
+	{
+    id:12,
+    name:"Qiyi Axis Black",
+    price:3.32,
+    img:"https://gsurcu.github.io/proyecto_coder_JS/img/qiyi/axis-3x3x3.jpg",
+    marca:"qiyi"
+  },
+	{
+    id:13,
+    name:"Qiyi QiHeng S Megaminx",
+    price:6.65,
+    img:"https://gsurcu.github.io/proyecto_coder_JS/img/qiyi/qiheng-s-megamix.jpg",
+    marca:"qiyi"
+  },
+	{
+    id:14,
+    name:"GAN MG Skewb Cube",
+    price:11.65,
+    img:"https://gsurcu.github.io/proyecto_coder_JS/img/gancube/mg-skewb.jpg",
     marca:"gan"
   }
 ]
