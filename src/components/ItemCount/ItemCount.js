@@ -1,39 +1,30 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import "./ItemCount.scss";
 
-export const ItemCount = () => {
+export const ItemCount = ({max, setCantidad, cantidad, onAdd}) => {
 
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
-  const handleAnterior = () => {
-    count > 0 && setCount( count - 1)
+  const handleRestar = () => {
+    cantidad > 0 && setCantidad( cantidad - 1)
 }
 
-  const handleSiguiente = () => {
-    setCount( count + 1 )
+  const handleSumar = () => {
+    cantidad < max && setCantidad( cantidad + 1 )
 }
 
-useEffect(() => {
-  console.log("Me monté")
-
-  return () => {
-    console.log("Me desmonté")
-  }
-}, [])
-
-useEffect(() => {
-  console.log('Clicks actualizados')
-
-}, [count])
 
   return (
     <div className="item-count">
-      <button className="btn" onClick={handleAnterior} disabled={count === 0}>
+      <button className="btn" onClick={handleRestar} disabled={cantidad === 0}>
           -
       </button>
-      <div className="count">{count}</div>
-      <button className="btn" onClick={handleSiguiente}>
+      <div className="count">{cantidad}</div>
+      <button className="btn" onClick={handleSumar} disabled={cantidad ===max}>
           +
+      </button>
+      <button className="btn btn-success my-2" onClick={onAdd}>
+          Agregar al carrito
       </button>
     </div>
   )
