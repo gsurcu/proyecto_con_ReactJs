@@ -1,0 +1,25 @@
+.detail{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "title title"
+  "img info";
+  width: 85%;
+  margin: auto;
+}
+.card {
+  &-title {
+    grid-area: title;
+  }
+  &-img {
+    grid-area: img;
+    object-fit: cover;
+    max-width: 100%;
+    align-self: center;
+    margin: auto;
+  }
+  &-info {
+    grid-area: info;
+  }
+
+}

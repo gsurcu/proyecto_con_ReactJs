@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import { ItemCount } from "../ItemCount/ItemCount";
+import "./ItemDetail.scss";
 
 export const ItemDetail = ({id, name, price, img, marca, stock}) => {
 
@@ -31,26 +32,29 @@ export const ItemDetail = ({id, name, price, img, marca, stock}) => {
     }
 
     return (
-        <div>
-            <h2>{name}</h2>
-            <img src={img} alt={name}/>
-            <p>{marca}</p>
-            <p>Precio: ${price}</p>
+        <div className="card detail">
+            <h2 className="card-title titulo">{name}</h2>
+            <img className="card-img" src={img} alt={name}/>
+            <div className="card-info">
+                <p>{marca}</p>
+                <p>Precio: ${price}</p>
 
-            {/* contador con opcion de agregar */}
-            {
-                !agregado 
-                ?   <ItemCount 
-                        max={stock} 
-                        cantidad={cantidad} 
-                        setCantidad={setCantidad}
-                        onAdd={handleAgregar}
-                    />
-                :   <Link to="/cart" className="btn btn-success d-block">Terminar mi compra</Link>
-            }
+                {/* contador con opcion de agregar */}
+                {
+                    !agregado 
+                    ?   <ItemCount 
+                            max={stock} 
+                            cantidad={cantidad} 
+                            setCantidad={setCantidad}
+                            onAdd={handleAgregar}
+                        />
+                    :   <Link to="/cart" className="btn">Terminar mi compra</Link>
+                }
+            </div>
 
-            <button className="btn btn-primary" onClick={handleVolver}>Volver</button>
-            <button className="btn btn-outline-primary" onClick={handleVolverInicio}>Volver al inicio</button>
+            <button className="btn" onClick={handleVolver}>Volver</button>
+            <button className="btn" onClick={handleVolverInicio}>Volver al inicio</button>
+
         </div>
     )
 }

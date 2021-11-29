@@ -23,7 +23,7 @@ export const ItemCount = ({max, setCantidad, cantidad, onAdd}) => {
       <button className="btn" onClick={handleSumar} disabled={cantidad ===max}>
           +
       </button>
-      <button className="btn btn-success my-2" onClick={onAdd}>
+      <button className="btn agregar" onClick={onAdd}>
           Agregar al carrito
       </button>
     </div>

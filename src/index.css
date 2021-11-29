@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-}
-section {
-  margin: 0 auto;
+  margin: 0;
 }
 li {
   list-style-type: none;
