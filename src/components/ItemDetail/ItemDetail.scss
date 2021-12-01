@@ -1,4 +1,4 @@
-.detail{
+.item {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
@@ -6,8 +6,6 @@
   "img info";
   width: 85%;
   margin: auto;
-}
-.card {
   &-title {
     grid-area: title;
   }
@@ -20,6 +18,10 @@
   }
   &-info {
     grid-area: info;
+    
   }
 
+}
+.marca{
+  text-transform: uppercase;
 }

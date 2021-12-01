@@ -11,7 +11,7 @@ export const Item = ({id,name,price,img,marca}) => {
         <div className="card-body">
           <h3 className="card-title">{name}</h3>
           <p className="card-text">Precio: ${price}</p>
-          <p className="card-text">{marca}</p>
+          <p className="card-text marca">{marca}</p>
           <button className="btn btn-primary">Agregar</button>
           <Link to={`/detail/${id}`} className="btn">Ver mas</Link>
         </div>
