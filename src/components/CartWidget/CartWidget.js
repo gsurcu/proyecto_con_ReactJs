@@ -8,9 +8,11 @@ export const CartWidget = () => {
 	const {totalCantidad} = useContext(CartContext)
 
 	return (
-		<div>
+	<button className="cart not-style-button" disabled={totalCantidad() === 0}>
+		<div className={`cont-widget ${totalCantidad() === 0 ? 'widget-disabled' : ''}`}>
 			<FaShoppingCart className="cartWidget"/>
-			<span>{totalCantidad()}</span>
+			<span className="textWidget">{totalCantidad()}</span>
 		</div>
+	</button>
 	)
 }

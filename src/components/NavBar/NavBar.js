@@ -8,19 +8,18 @@ export const NavBar = () => {
 		<header className="header">
 			<div className="primary-header">
 				<div className="header-button header-menu">
-					<button className="menu" id="boton-menu">
+					<button className="menu not-style-button" id="boton-menu">
 						<i className="fas fa-bars fa-lg"></i>
 						<span className="bar-text">menu</span>
 					</button>
 				</div>
-				<div className="header-titulo">
-					<span className="titulo"><Link to="/">Cube</Link></span>
+				<div className="header-titulo center">
+					<span className="center"><Link to="/">Cube</Link></span>
 				</div>
 				<div className="header-button header-cart">
-					<button className="cart">
-						{/* <i className="fas fa-shopping-cart fa-lg"></i> */}
-						<CartWidget />
-					</button>
+						<Link to="/cart">
+							<CartWidget />
+						</Link>
 				</div>
 				<div className="header-search search"><form className="search-form" action="#" method="get"><input type="search" name="" id="" placeholder="Search products..."/></form></div>
 				<div className="header-list list">

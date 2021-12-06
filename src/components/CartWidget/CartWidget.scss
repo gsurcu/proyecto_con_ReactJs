@@ -1,3 +1,14 @@
-.cartWidget {
-    font-size: 1.3rem;
+.cont-widget {
+    display: flex;
+    align-items: center;
+    .cartWidget {
+        font-size: 1.3rem;
+    }
+    .textWidget {
+        line-height: 0;
+    }
+}
+
+.widget-disabled {
+    visibility: hidden;
 }

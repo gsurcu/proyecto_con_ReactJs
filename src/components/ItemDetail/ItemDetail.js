@@ -28,6 +28,8 @@ export const ItemDetail = ({id, name, price, img, marca, stock}) => {
 				name,
 				price,
 				img,
+				marca,
+				stock,
 				cantidad
 			})
 		}   
