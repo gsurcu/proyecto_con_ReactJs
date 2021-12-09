@@ -259,7 +259,13 @@
 .none {
     display: none;
 }
-@media only screen and (min-width: 992px) {
+
+@media only screen and (min-width: 400px) {
+    .bar-text {
+        display: inline;
+    }
+}
+    @media only screen and (min-width: 992px) {
     .producto_item {
         max-width: 24.5%;
         min-width: 24%;

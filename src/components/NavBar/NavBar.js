@@ -10,7 +10,7 @@ export const NavBar = () => {
 				<div className="header-button header-menu">
 					<button className="menu not-style-button" id="boton-menu">
 						<i className="fas fa-bars fa-lg"></i>
-						<span className="bar-text">menu</span>
+						<span className="bar-text none">menu</span>
 					</button>
 				</div>
 				<div className="header-titulo center">
