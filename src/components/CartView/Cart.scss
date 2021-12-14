@@ -39,6 +39,12 @@
           }
         }
       }
+      .item-delete{
+        order: -1;
+        line-height: 0;
+        font-size: 1rem;
+        padding: 0 .15rem;
+      }
       .item-price{
         flex: 1;
       }
@@ -53,8 +59,17 @@
       justify-content: space-between;
     }
   }
+  &-btn {
+    a{
+    display: inline-block;
+    width: 100%;
+    padding: 1px 6px;
+    }
+  }
 }
-
+.p-cero {
+  padding: 0;
+}
 @media only screen and (min-width: 992px) {
   .cart {
     display: flex;

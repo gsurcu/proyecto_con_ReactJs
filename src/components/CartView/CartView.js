@@ -6,7 +6,7 @@ import './Cart.scss';
 
 export const CartView = () => {
 
-  const {carrito, vaciarCarrito} = useContext(CartContext)
+  const {carrito, vaciarCarrito, totalCompra} = useContext(CartContext)
 
   return (
     <div className="cont-cart">
@@ -20,14 +20,18 @@ export const CartView = () => {
                   carrito.map((prod) => <CartItem {...prod} key={prod.id}/>)
               }
               <button className="cart-btn" onClick={vaciarCarrito}>Vaciar carrito</button>
-              <button className="cart-btn">Terminar mi compra</button>
+              <button className="cart-btn p-cero">
+              <Link to="/checkout">
+              Terminar mi compra
+              </Link>
+              </button>
           </div>
           <div className='cart-buy'>
             <div className="cart-sub">
               <span>Subtotal:</span>
               <span>$
                 {
-                  Math.round((carrito.reduce((sub,prod) => sub + (prod.price*prod.cantidad),0)) * 100) / 100
+                  Math.round((totalCompra()) * 100) / 100
                 }
               </span>
             </div>
@@ -43,7 +47,7 @@ export const CartView = () => {
               <span>Total:</span>
               <span>$
                 {
-                  (Math.round((carrito.reduce((sub,prod) => sub + (prod.price*prod.cantidad),0)) * (100+21)) / 100)
+                  (Math.round((totalCompra()) * (100+21)) / 100)
                 }
               </span>
             </div>
