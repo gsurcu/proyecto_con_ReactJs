@@ -25,7 +25,6 @@ export const ItemListContainer = () => {
 					id: doc.id,
 					...doc.data()
 				}))
-				console.log(collection.docs.map(doc => doc.data()))
 				setProductos(items)
 			})
 			.finally(() => {
