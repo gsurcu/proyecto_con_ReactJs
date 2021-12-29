@@ -1,17 +1,17 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
+import { useCounter } from "../../hooks/useCounter";
 import { ItemCount } from "../ItemCount/ItemCount";
 import "./ItemDetail.scss";
 
 export const ItemDetail = ({id, name, price, img, marca, stock}) => {
 
 	const {agregarAlCarrito, isInCart} = useContext(CartContext)
+	const { counter, sumar, restar } = useCounter(0,stock,0)
 
 	const navigate = useNavigate()
-
-	const [cantidad, setCantidad] = useState(0)
 
 	const handleVolver = () => {
 			navigate(-1)
@@ -22,7 +22,7 @@ export const ItemDetail = ({id, name, price, img, marca, stock}) => {
 	}
 
 	const handleAgregar = () => {
-		if (cantidad > 0) {
+		if (counter > 0) {
 			agregarAlCarrito({
 				id,
 				name,
@@ -30,7 +30,7 @@ export const ItemDetail = ({id, name, price, img, marca, stock}) => {
 				img,
 				marca,
 				stock,
-				cantidad
+				cantidad: counter
 			})
 		}   
 	}
@@ -46,10 +46,11 @@ export const ItemDetail = ({id, name, price, img, marca, stock}) => {
 				{/* contador con opcion de agregar */}
 				{
 					!isInCart(id)
-					? <ItemCount 
-							max={stock} 
-							cantidad={cantidad} 
-							setCantidad={setCantidad}
+					? <ItemCount
+							max={stock}
+							cantidad={counter} 
+							sumar={sumar}
+							restar={restar}
 							onAdd={handleAgregar}
 						/>
 					: <Link to="/cart" className="btn btn-success d-block">Terminar mi compra</Link>

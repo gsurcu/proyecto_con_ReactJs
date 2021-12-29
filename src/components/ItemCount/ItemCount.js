@@ -1,29 +1,23 @@
 import React from "react";
+import { btnConfig } from "./btnConfig";
 import "./ItemCount.scss";
 
-export const ItemCount = ({max, setCantidad, cantidad, onAdd}) => {
+export const ItemCount = ({sumar, restar, cantidad, onAdd, max}) => {
 
-  // const [count, setCount] = useState(0)
-
-  const handleRestar = () => {
-    cantidad > 0 && setCantidad( cantidad - 1)
-}
-
-  const handleSumar = () => {
-    cantidad < max && setCantidad( cantidad + 1 )
-}
-
-
+  const config = btnConfig(cantidad, max)
   return (
     <div className="item-count">
-      <button className="btn" onClick={handleRestar} disabled={cantidad === 0}>
+      <button {...config.restar} onClick={restar}>
           -
       </button>
       <div className="count">{cantidad}</div>
-      <button className="btn" onClick={handleSumar} disabled={cantidad ===max}>
+      <button {...config.sumar} onClick={sumar}>
           +
       </button>
-      <button className="btn agregar" onClick={onAdd}>
+      <button
+        className="btn agregar"
+        onClick={onAdd}
+        disabled={cantidad === 0}>
           Agregar al carrito
       </button>
     </div>

@@ -38,25 +38,6 @@ export const NavBar = () => {
 					<li><span><Link to="productos/gan">gan</Link></span></li>
 				</ul>
 			</nav>
-			<div className="toggle-header">
-				<div className="toggle-header-search search">
-					<form className="search-form" action="" method="get"><input type="search" name="" id="" placeholder="Search products..."/></form>
-				</div>
-				<div className="toggle-header-list list">
-					<ul>
-						<li><span>Iniciar Sesion</span></li>
-						<li><span>Carrito</span></li>
-						<li><span>Catalogo</span></li>
-					</ul>
-				</div>
-			</div>
-			<div className="toggle-cart">
-				<div className="toggle-cart-header">
-					<div className="toggle-cart-head">Shopping Cart</div>
-					<div className="toggle-cart-cancel cart"></div>
-				</div>
-				<div className="toggle-cart-carrito"></div>
-			</div>
 		</header>
 	)
 }
